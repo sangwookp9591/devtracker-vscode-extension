@@ -7,9 +7,19 @@
     "engines": {
         "vscode": "^1.104.0"
     },
+    "license": "MIT",
     "categories": [
         "Other"
     ],
+    "author": {
+        "name": "Sangwook Park",
+        "email": "sangwookp9591@gmail.com",
+        "url": "https://devtracker.co.kr"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sangwookp9591/devtracker-vscode-extension.git"
+    },
     "activationEvents": [],
     "main": "./out/extension.js",
     "contributes": {
