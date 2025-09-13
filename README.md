@@ -1,72 +1,29 @@
-# devtacker-time-tracker README
+# DevTacker Time Tracker
 
-This is the README for your extension "devtacker-time-tracker". After writing up a brief description, we recommend including the following sections.
+**DevTacker Time Tracker**는 개발자의 작업 시간을 자동으로 기록하고, DevTracker 서버로 활동 데이터를 전송하는 VS Code 확장 프로그램입니다.
 
-## Features
+## ✨ 기능
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+-   **자동 시간 추적**: API Key가 설정되어 있으면 VS Code 실행 시 자동으로 추적 시작
+-   **수동 제어**: 명령어를 통해 추적 시작/중지 가능
+-   **상태바 표시**: 작업 시간 경과를 분 단위로 상태바에 표시
+-   **서버 전송**: 5분마다 활동 데이터를 DevTracker 서버에 전송
+-   **활동 기록**:
+    -   파일 이름
+    -   프로젝트 경로
+    -   언어 종류
+    -   작업 시간(분)
+    -   변경된 라인 수
+    -   활동 시각
 
 ---
 
-## Following extension guidelines
+## 📦 설치
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+1. 이 저장소를 클론하거나 VSIX 파일을 설치합니다.
+2. VS Code에서 확장을 로드합니다.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-# devtracker-vscode-extension
+```bash
+npm install
+npm run compile
+```
