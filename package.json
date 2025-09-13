@@ -1,7 +1,7 @@
 {
-    "name": "devtacker-time-tracker",
-    "displayName": "DevTacker Time Tracker",
-    "description": "Automatic time tacking for developers",
+    "name": "devtracker-time-tracker",
+    "displayName": "DevTracker Time Tracker",
+    "description": "Automatic time tracking for developers",
     "version": "0.0.1",
     "publisher": "devtracker",
     "engines": {
