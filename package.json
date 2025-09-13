@@ -1,0 +1,63 @@
+{
+    "name": "devtacker-time-tracker",
+    "displayName": "DevTacker Time Tracker",
+    "description": "Automatic time tacking for developers",
+    "version": "0.0.1",
+    "publisher": "devtracker",
+    "engines": {
+        "vscode": "^1.104.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "devtracker.startTracking",
+                "title": "Start Tracking",
+                "category": "DevTracker"
+            },
+            {
+                "command": "devtracker.stopTracking",
+                "title": "Stop Tracking",
+                "category": "DevTracker"
+            },
+            {
+                "command": "devtracker.configure",
+                "title": "Configure API Key",
+                "category": "DevTracker"
+            }
+        ],
+        "configuration": {
+            "title": "DevTracker",
+            "properties": {
+                "devtracker.apiKey": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Your DevTracker API key"
+                },
+                "devtracker.serverUrl": {
+                    "type": "string",
+                    "default": "https://api.devtracker.co.kr",
+                    "description": "DevTracker server URL"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.104.0",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "22.x",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "axios": "^1.4.0"
+    }
+}
